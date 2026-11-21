@@ -13,14 +13,15 @@ and does not fall.`;
 
 const MAX_CODE_POINTS = 280;
 
-async function main(): Promise<void> {
-  const outputDir = process.env.OUTPUT_DIR ?? '/output';
-  const entryPath = join(outputDir, 'entry.txt');
-
-  await mkdir(outputDir, { recursive: true });
+async function writeEntry(dir: string): Promise<string> {
+  const entryPath = join(dir, 'entry.txt');
+  await mkdir(dir, { recursive: true });
   await writeFile(entryPath, ENTRY, { encoding: 'utf8' });
+  return entryPath;
+}
 
-  const bytes = await readFile(entryPath);
+async function verifyEntry(path: string): Promise<void> {
+  const bytes = await readFile(path);
 
   let text: string;
   try {
@@ -42,6 +43,12 @@ async function main(): Promise<void> {
 
   const sha256 = createHash('sha256').update(bytes).digest('hex');
   console.log(`entry.txt: ${codePoints} code points, sha256 ${sha256}`);
+}
+
+async function main(): Promise<void> {
+  const outputDir = process.env.OUTPUT_DIR ?? '/output';
+  const entryPath = await writeEntry(outputDir);
+  await verifyEntry(entryPath);
 }
 
 main().catch((error: unknown) => {
