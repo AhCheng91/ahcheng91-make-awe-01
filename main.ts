@@ -2,14 +2,14 @@ import { mkdir, writeFile, readFile } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 import { join } from 'node:path';
 
-const ENTRY = `The air is on the roof tonight.
-It is on the field and the pond,
-on the heron standing asleep in the shallows.
-It weighs the same on all of it,
-and has since long before the house.
-The roof does not creak under it.
-The heron sleeps on one leg
-and does not fall.`;
+const ENTRY = `Your mother's hand is on your forehead, weighing nothing.
+It has been there, on and off, all night.
+The rain goes over the roof
+in long soft passes,
+and the town turns in its sleep.
+By morning your skin will be cool
+and she will be asleep in the chair
+and the rain elsewhere.`;
 
 const MAX_CODE_POINTS = 280;
 
