@@ -7,7 +7,8 @@ keeping time with his own breathing,
 slower than yours.
 It has nowhere else to be.
 Outside, the field is dark, and the stars
-are doing what stars do,
+have been doing what they do
+since before there were hands,
 which is nothing, for a very long time.`;
 
 const MAX_CODE_POINTS = 280;
