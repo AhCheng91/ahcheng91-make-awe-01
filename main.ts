@@ -6,11 +6,10 @@ const ENTRY = `Your father's hand is flat on your back,
 keeping time with his own breathing,
 slower than yours, and warmer.
 It has nowhere else to be.
-Outside, the field is dark, and the earth
-is turning, carrying you both
-the long way to morning,
+The field is dark, and the earth is turning,
+carrying you the long way to morning,
 and the stars do nothing,
-for a very long time.`;
+for a long time.`;
 
 const MAX_CODE_POINTS = 280;
 
