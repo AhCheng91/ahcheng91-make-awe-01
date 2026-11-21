@@ -2,14 +2,13 @@ import { mkdir, writeFile, readFile } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 import { join } from 'node:path';
 
-const ENTRY = `Your mother's hand is on your forehead, weighing nothing.
-It has been there, on and off, all night.
-The rain goes over the roof
-in long soft passes,
-and the town turns in its sleep.
-By morning your skin will be cool
-and she will be asleep in the chair
-and the rain elsewhere.`;
+const ENTRY = `Your father's hand is flat on your back,
+keeping time with his own breathing,
+slower than yours.
+It has nowhere else to be.
+Outside, the field is dark, and the stars
+are doing what stars do,
+which is nothing, for a very long time.`;
 
 const MAX_CODE_POINTS = 280;
 
