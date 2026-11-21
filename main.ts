@@ -2,14 +2,14 @@ import { mkdir, writeFile, readFile } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 import { join } from 'node:path';
 
-const ENTRY = `Your father's hand is flat on your back,
-keeping time with his own breathing,
-slower than yours.
-It has nowhere else to be.
-Outside, the field is dark, and the stars
-have been doing what they do
-since before there were hands,
-which is nothing, for a very long time.`;
+const ENTRY = `You are asleep in the hay cart,
+and the horse knows the way home.
+No one is holding the reins.
+The wheels find the stones and let them go.
+Overhead, the stars are doing what they do,
+which is nothing,
+and have been since before there were carts,
+for a very long time.`;
 
 const MAX_CODE_POINTS = 280;
 
