@@ -2,14 +2,16 @@ import { mkdir, writeFile, readFile } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 import { join } from 'node:path';
 
-const ENTRY = `Your father's hand is flat on your back,
-keeping time with his own breathing,
-slower than yours, and warmer.
-It has nowhere else to be.
-The field is dark, and the earth is turning,
-carrying you the long way to morning,
-and the stars do nothing,
-for a long time.`;
+const ENTRY = `Nothing is needed of you.
+
+A truck climbs a hill in the dark.
+Your mother sings, low, to keep the engine company.
+You are the child asleep against the window.
+
+The engine hums. A long hum. Gravel. Another hill.
+
+The cliffs ahead were sand once.
+They took their time standing up.`;
 
 const MAX_CODE_POINTS = 280;
 
